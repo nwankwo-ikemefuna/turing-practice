@@ -12,8 +12,8 @@ At the beginning of the game, you start with an empty record. Youy are given a l
 Return the sum of all the scores on the record.
 
 #### Constraints
-* 1 <= ops.length <= 1000.
-* ops[i] is "C", "D", "+", or a string representing an integer in the range [-3 * 104, 3 * 104].
+* `1 <= ops.length <= 1000`
+* `ops[i]` is "C", "D", "+", or a string representing an integer in the range `[-3 * 104, 3 * 104]`.
 * For operation "+", there will always be at least two previous scores on the record.
 * For operations "C" and "D", there will always be at least one previous score on the record.
 <br>
