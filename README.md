@@ -26,4 +26,26 @@ ___
 
 Given an integer array `arr`, count how many elements `x` there are, such that `x + 1` is also in `arr`.
 If there're duplicates in `arr`, count them separately.
- 
+<br>
+<br>
+___
+
+<br>
+
+### Problem 3
+
+Give a string S, return the "reversed" string where all characters that are not a letter stay in the same place, and all letters reverse their positions.
+<br>
+<br>
+___
+
+<br>
+
+### Problem 4
+
+Given an array **A** of integers and integer **K**, return the maximum **S** such that there exists **i < j** with **A[i] + A[j] = S** and **S < K**. If no such **i**, **j** exist satisfying this equation, return **-1**. 
+
+#### Constraints
+* `1 <= A.length <= 100`
+* `1 <= A[i] <= 1000`
+* `1 <= K <= 20005`

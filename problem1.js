@@ -35,9 +35,13 @@ const calPoints = (ops) => {
 }
 
 const ops1 = ['5', '2', 'C', 'D', '+'];
-const ops2 = ['5', '-2', '4', 'C', 'D', '9', '+', '+'];
-const ops3 = ['1'];
-
 console.log(`Input ${ops1.join(' ')} = ${calPoints(ops1)}`);
+//expected output: 30
+
+const ops2 = ['5', '-2', '4', 'C', 'D', '9', '+', '+'];
 console.log(`Input ${ops2.join(' ')} = ${calPoints(ops2)}`);
+//expected output: 27
+
+const ops3 = ['1'];
 console.log(`Input ${ops3.join(' ')} = ${calPoints(ops3)}`);
+//expected output: 1
