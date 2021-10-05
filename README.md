@@ -19,7 +19,6 @@ Return the sum of all the scores on the record.
 <br>
 <br>
 ___
-
 <br>
 
 ### Problem 2
