@@ -10,26 +10,17 @@ function twoSumLessThanK(arr, benchmark) {
     arr2 = arr2.sort((a, b) => b - a);
 
     //step 3: create a new array where each entry is arr1[i] + arr2[i] < benchmark
-    let sumArr = [];
+    let maxSum = -1;
     for (num1 of arr1) {
         for (num2 of arr2) {
             const sum = num1 + num2;
-            const maxSumArr = Math.max(...sumArr);
-            //skip sum >= benchmark sum < max of sumArr
-            if (sum >= benchmark || sum < maxSumArr) continue;
-            sumArr.push(sum);
+            //skip sum >= benchmark sum < maxSum
+            if (sum >= benchmark || sum < maxSum) continue;
+            maxSum = sum;
         }
     }
 
-    //step 4: get the max of sumArr or return -1 if sumArr is empty
-    let result = -1;
-    if (sumArr.length > 0) {
-        result = Math.max(...sumArr);
-    }
-
-    console.log(sumArr.length);
-
-    return result;
+    return maxSum;
 }
 
 const numberRange = (length, start = 1, step = 1) => {
