@@ -1,5 +1,6 @@
+const { numberRange } = require("./helpers/utils");
 
-function twoSumLessThanK(arr, benchmark) {
+const twoSumLessThanK = (arr, benchmark) => {
 
     //step 1: filter out duplicate numbers (since i < j) and numbers >= benchmark (arr1), and get a copy of it (arr2)
     let arr1 = arr.filter((num, index) => (num < benchmark) && (arr.indexOf(num) === index));
@@ -23,9 +24,6 @@ function twoSumLessThanK(arr, benchmark) {
     return maxSum;
 }
 
-const numberRange = (length, start = 1, step = 1) => {
-    return Array.from({ length }, (_x, i) => (i + start) * step);
-}
 
 console.time('test1');
 const arr1 = [34, 23, 1, 24, 75, 33, 54, 8];
@@ -46,6 +44,6 @@ console.timeEnd('test2');
 console.time('test3');
 const arr3 = numberRange(1000, 1, 6);
 const benchmark3 = 7600;
-//expected output: -1
+//expected output: 7596
 console.log(`Input [${arr3.join(', ')}] @ ${benchmark3} = ${twoSumLessThanK(arr3, benchmark3)}`);
 console.timeEnd('test3');

@@ -1,8 +1,7 @@
-function isAlpha(x) {
-	return (x >= 'A' && x <= 'Z') || (x >= 'a' && x <= 'z');
-}
+const { isAlpha } = require("./helpers/utils");
 
-function swapChar(str, a, b) {
+
+const swapChar = (str, a, b) => {
 	let c = '';
 	const strLen = str.length;
 	for (let i = 0; i < strLen; i++) {
@@ -13,7 +12,7 @@ function swapChar(str, a, b) {
 	return c;
 }
 
-function reverseOnlyLetters(str) {
+const reverseOnlyLetters = (str) => {
 	// Initialize left and right pointers
 	let right = str.length - 1, left = 0;
 

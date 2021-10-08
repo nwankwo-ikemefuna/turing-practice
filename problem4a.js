@@ -1,6 +1,5 @@
-const numberRange = (length, start = 1, step = 1) => {
-    return Array.from({ length }, (_x, i) => (i + start) * step);
-}
+const { numberRange } = require("./helpers/utils");
+
 
 const executeFunc = (arr, k) => {
   let maxPossibleValue = -1
