@@ -25,14 +25,14 @@ const twoSumLessThanK = (arr, benchmark) => {
 }
 
 
-console.time('test1');
-const arr1 = [34, 23, 1, 24, 75, 33, 54, 8];
-const benchmark1 = 60;
+// console.time('test1');
+const arr1 = [34, 23, 1, 24, 75, 33, 54, 8, 35];
+const benchmark1 = 35;
 //expected output: 58
-console.log(`Input [${arr1.join(', ')}] @ ${benchmark1} = ${twoSumLessThanK(arr1, benchmark1)}`);
-console.timeEnd('test1');
+console.log(twoSumLessThanK(arr1, benchmark1));
+// console.timeEnd('test1');
 
-
+/* 
 console.time('test2');
 const arr2 = [10, 20, 30];
 const benchmark2 = 15;
@@ -46,4 +46,4 @@ const arr3 = numberRange(1000, 1, 6);
 const benchmark3 = 7600;
 //expected output: 7596
 console.log(`Input [${arr3.join(', ')}] @ ${benchmark3} = ${twoSumLessThanK(arr3, benchmark3)}`);
-console.timeEnd('test3');
+console.timeEnd('test3'); */
